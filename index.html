@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="form-container">
+      <form action="" id="form" novalidate>
+        <div id="email-div">
+          <input
+            type="email"
+            id="email"
+            placeholder="Email ou telefone"
+            required
+          />
+          <p class="error-message" id="email-error"></p>
+        </div>
+        <div>
+          <input
+            type="password"
+            id="password"
+            placeholder="Senha"
+            required
+            minlength="8"
+            maxlength="20"
+          />
+          <p class="error-message" id="password-error"></p>
+        </div>
+        <button id="entrar">Entrar</button>
+        <p id="esqueceu-senha">Esqueceu a senha?</p>
+        <div id="line"></div>
+        <button id="nova-conta">Criar nova conta</button>
+      </form>
+    </div>
+  </body>
+</html>
